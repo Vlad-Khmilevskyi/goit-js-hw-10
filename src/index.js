@@ -41,7 +41,7 @@ function onInputSearch(e) {
 
 function countriesListMarkup(result) {
     return listMarkup = result.map((({ name, flags }) => {
-        return  `<li>
+        return  `<li class="country-item">
                     <img src="${flags.svg}" alt="${name.official}" width="60" height="auto">
                     <span>${name.official}</span>
                 </li>`;

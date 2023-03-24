@@ -15,6 +15,49 @@ body {
 #search-box {
   font: inherit;
   padding: 8px;
-  max-width: 320px;
-  margin-bottom: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+.country-list {
+  width: fit-content;
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.country-item {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-info {
+  margin-left: 20px;
+}
+
+.weather-info {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.weather-info-item-map{
+  display: flex;
+  gap: 10px;
+}
+
+.temp {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.weather-info-item {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
 }
