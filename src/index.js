@@ -4,7 +4,7 @@ import debounce from 'lodash.debounce';
 import { fetchCountries } from './js/fetchCountries';
 
 import weatherCardTemplate from './templates/country-card.hbs';
-// import countriesLists from './templates/country-list.hbs';
+import countriesLists from './templates/country-list.hbs';
 
 
 const DEBOUNCE_DELAY = 300;
@@ -40,17 +40,6 @@ function onInputSearch(e) {
     });
 }
 
-// // const countriesListMarkup = event => {
-// //     event.preventDefault();
-
-// //     const listMarkup = event.target.value.trim();
-
-// //     fetchCountries(listMarkup)
-// //     .then(data => {
-// //         countriesLists(data);
-// //     });
-// // }
-
 function countriesListMarkup(result) {
     return listMarkup = result.map((({ name, flags }) => {
         return  `<li class="country-item">
@@ -67,7 +56,7 @@ function renderCountries(result) {
     }
     if (result.length > 1 && result.length < 11) {
     countryInfo.innerHTML = '';
-    countriesList.innerHTML = countriesListMarkup(result) * result.length;
+    countriesList.innerHTML = countriesListMarkup(result);
     }
 }
 
