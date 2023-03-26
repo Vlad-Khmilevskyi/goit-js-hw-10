@@ -45,7 +45,7 @@ function countriesListMarkup(result) {
 }
 
 function countryCardMarkup(result) {
-    return cardMarkup = result.map(({ flags, name, capital, population, languages }) => {
+    return result.map(({ flags, name, capital, population, languages }) => {
         languages = Object.values(languages).join(", ");
         return `<ul class="weather-info list">
                     <li class="weather-info-item-map">
